@@ -19,8 +19,8 @@ export const Filters: React.FC<Props> = ({ className }) => {
             {/* Верхние чекбоксы */}
 
             <div className='flex flex-col gap-4'>
-                <FilterCheckbox text="Kann sammeln" value="1"/>
-                <FilterCheckbox text="Neu" value="2"/>
+                <FilterCheckbox text="verfügbar" value="1"/>
+                <FilterCheckbox text="maßgeschneiderte" value="2"/>
             </div>
 
             {/* Фильтр цен */}
@@ -37,67 +37,75 @@ export const Filters: React.FC<Props> = ({ className }) => {
             </div>
 
             <CheckboxFiltersGroup
-                title='Ingredients'
+                title='Stoffe'
                 className='mt-5'
                 limit={4}
                 defaultItems={[
                     {
-                        text: 'Käse Souce',
+                        text: 'Plush stoff',
                         value: '1',
                     },
                     {
-                        text: 'Mozarella',
+                        text: 'Kunstfell',
                         value: '2',
                     },
                     {
-                        text: 'Knoblauch',
+                        text: 'Velour',
                         value: '3',
                     },
                     {
-                        text: 'Salzte Gurken',
+                        text: 'Kunstleder',
                         value: '4',
                     },
                     {
-                        text: 'Rote Zwiebel',
+                        text: 'Bio-Füllung',
                         value: '5',
                     },
                     {
-                        text: 'Tomaten',
+                        text: 'Hypoallergen-Füllung',
                         value: '6',
                     },
                     {
-                        text: 'Oliven',
+                        text: 'Kirschkerne',
                         value: '7',
                     },
                 ]}
 
                 items={[
                     {
-                        text: 'Käse Souce',
+                        text: 'Kaninchenfell',
+                        value: '8',
+                    },
+                    {
+                        text: 'Langhaarige Stoffe',
+                        value: '9',
+                    },
+                    {
+                        text: 'Plush stoff',
                         value: '1',
                     },
                     {
-                        text: 'Mozarella',
+                        text: 'Kunstfell',
                         value: '2',
                     },
                     {
-                        text: 'Knoblauch',
+                        text: 'Velour',
                         value: '3',
                     },
                     {
-                        text: 'Salzte Gurken',
+                        text: 'Kunstleder',
                         value: '4',
                     },
                     {
-                        text: 'Rote Zwiebel',
+                        text: 'Bio-Füllung',
                         value: '5',
                     },
                     {
-                        text: 'Tomaten',
+                        text: 'Hypoallergen-Füllung',
                         value: '6',
                     },
                     {
-                        text: 'Olivenblablablalangeschlangename',
+                        text: 'Kirschkerne',
                         value: '7',
                     },
                 ]}
