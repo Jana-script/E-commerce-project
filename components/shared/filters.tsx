@@ -21,6 +21,8 @@ export const Filters: React.FC<Props> = ({ className }) => {
             <div className='flex flex-col gap-4'>
                 <FilterCheckbox text="Kann sammeln" value="1"/>
                 <FilterCheckbox text="Neu" value="2"/>
+                <FilterCheckbox text="in Stock" value="1"/>
+                <FilterCheckbox text="maßgeschneiderte" value="2"/>
             </div>
 
             {/* Фильтр цен */}
@@ -38,15 +40,19 @@ export const Filters: React.FC<Props> = ({ className }) => {
 
             <CheckboxFiltersGroup
                 title='Ingredients'
+                title='Stoffe'
                 className='mt-5'
                 limit={4}
+                limit={2}
                 defaultItems={[
                     {
                         text: 'Käse Souce',
+                        text: 'Plush',
                         value: '1',
                     },
                     {
                         text: 'Mozarella',
+                        text: 'Kunstleather',
                         value: '2',
                     },
                     {
@@ -74,12 +80,22 @@ export const Filters: React.FC<Props> = ({ className }) => {
                 items={[
                     {
                         text: 'Käse Souce',
+                        text: 'Kunstfell',
                         value: '1',
                     },
                     {
                         text: 'Mozarella',
+                        text: 'Velour',
                         value: '2',
                     },
+                ]}
+                />
+
+<CheckboxFiltersGroup
+                title='Color'
+                className='mt-5'
+                limit={2}
+                defaultItems={[
                     {
                         text: 'Knoblauch',
                         value: '3',
@@ -91,17 +107,27 @@ export const Filters: React.FC<Props> = ({ className }) => {
                     {
                         text: 'Rote Zwiebel',
                         value: '5',
+                        text: 'Weiß',
+                        value: '2',
                     },
+                    ]}
+
+                items={[
                     {
                         text: 'Tomaten',
                         value: '6',
+                        text: 'Rosa',
+                        value: '1',
                     },
                     {
                         text: 'Olivenblablablalangeschlangename',
                         value: '7',
+                        text: 'Minz',
+                        value: '2',
                     },
                 ]}
                 />
+
             </div>
         </div>
     );

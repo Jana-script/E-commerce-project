@@ -18,12 +18,16 @@ export const ProductCard: React.FC<Props> = ({ id, name, price, imageUrl, classN
             <Link href={'/products/' + id} style={{textDecoration: 'none'}}>
                 <div className="flex justify-center p-6 bg-secondary rounded-lg h-[260px]">
                     <img className="w-[215px] h-[215px]" src={imageUrl} alt="name"/>
+                <div className="flex justify-center bg-secondary rounded-lg h-[215px]">
+                    <img className="w-[287px] h-[215px]" src={imageUrl} alt="name"/>
                 </div>
 
                 <Title text={name} size="sm" className='mb-1 mt-3'/>
 
                 <p className=' text-sm text-gray-400'>
                     Chicken, Mozarella, Chadder, Parmezan, Tomaten, Sauce, Knoblauch
+                    Stoff:__, Farbe:__, Große:__
+                    Das Kuscheltier, inspiriert von einer Zeichentrickfigur, ist detailgetreu gestaltet und ideal für Fans. Hergestellt aus hypoallergenen Materialien, ist es weich und kindersicher.
                 </p>
 
                 <div className='flex justify-between items-center mt-4'>
